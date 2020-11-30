@@ -17,7 +17,8 @@ namespace CA201130_2
 
             conn.Open();
 
-            var cmd = new SqlCommand("SELECT Year(szul) AS szulEv FROM emberek", conn);
+            var cmd = new SqlCommand(
+                "SELECT Year(szul) AS szulEv FROM emberek", conn);
             SqlDataReader r = cmd.ExecuteReader();
 
             while (r.Read())
