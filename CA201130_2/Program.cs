@@ -25,7 +25,6 @@ namespace CA201130_2
                 Console.WriteLine(r["szulEv"]);
             }
 
-
             conn.Close();
             Console.ReadKey(true);
         }
